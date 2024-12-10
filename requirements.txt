@@ -1,0 +1,7 @@
+# Install pandas, plotly, and streamlit from the Anaconda repository
+pandas==2.0.*  --extra-index-url https://repo.anaconda.com/pypi/
+plotly==5.24.* --extra-index-url https://repo.anaconda.com/pypi/
+streamlit==1.35.* --extra-index-url https://repo.anaconda.com/pypi/
+
+# Install streamlit-aggrid from PyPI
+streamlit-aggrid==1.0.*
