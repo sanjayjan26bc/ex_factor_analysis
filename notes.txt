@@ -1,0 +1,77 @@
+Below version of libraries are used:
+pandas version 2.0.3
+plotly  version 5.24.1
+streamlit version 1.35.0
+streamlit-aggrid version 1.0.5
+
+Updates to Action Items:
+Action Items for 12/06/2024:
+
+// *** REQUIREMENT #1 ***//
+#1: Above all else, prioritize how edits and selections are passed to the streamlit application! 
+Below code assigns the grid_response to session state. 
+
+# Extract the grid response from the return value
+grid_response_stag = return_value.get('grid_response', {})
+
+# Store the grid response in session state
+st.session_state['grid_response_stag'] = grid_response_stag
+
+The session state values are shown before AgGrid rendering and after rendering.
+
+// *** REQUIREMENT #2 ***///
+#2: Programmatically rendering which parts of the pivot are expanded and programmatically sensing which part of the pivot are expanded from aggrid.
+Above is not needed.
+
+// *** REQUIREMENT #3 ***///
+Do everything assuming flat dataframe (no pivot, no grouping)
+This is done.
+
+// *** REQUIREMENT #4 ***//
+Hover over any cell should tooltip the value in the corresponding comment column, but preceded by indication that original value had been changed since last save.
+// *** REQUIREMENT #5 ***//
+Render with a multi index column header
+
+Both above requirements can be done with tooltipValueGetter, children option.
+When GridOptionsBuilder is used, the above options are not working. I am looking into this.
+
+{
+   'headerName': "Hover For Tooltip",
+   'headerTooltip': "Column Groups can have Tooltips also",
+   'children': [
+     {
+       'field': "sport",
+       'tooltipValueGetter': JsCode("""function(){return "Tooltip text about Sport should go here"}"""),
+       'headerTooltip': "Tooltip for Sport Column Header",
+     },
+
+
+// *** REQUIREMENT #6 ***//
+Selecting any cell should tooltip the value of the corresponding comment column
+
+This is added to the Upstream column. When Upstream value is clicked, corresponding comments are shown.
+
+// *** REQUIREMENT #7 ***//
+Double clicking a value cell should allow editing.
+This is added to Prod. Sol. column. Double clicking allows editing.
+
+// *** REQUIREMENT #8 ***//
+All edited cells not saved yet are formatted differently (maybe a corner token, different background color, something), this includes related aggregates
+An edit should trigger an event (both the location and value change)
+
+Above requirement - Work in progress.
+
+// *** REQUIREMENT #9 ***//
+Fix Panes so that multiple BU columns can be scrolled to the right but left hand factors are still visible
+This has been done using below code.
+builder.configure_column('Factor L1', pinned='left')
+
+// *** REQUIREMENT #10 ***//
+Alternating rows are shaded for easy reading
+This is done. Odd number rows - no color. Even number rows - light blue.
+
+
+In addition below changes are also done.
+Sort option at column header level removed.
+Filter added only to Prod. Sol. and Upstream columns.
+Pagination is enabled.
