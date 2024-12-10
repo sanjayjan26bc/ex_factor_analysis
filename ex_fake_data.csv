@@ -1,0 +1,33 @@
+Factor L1,Factor L2,Factor L3,Factor L4,BU Level 1,BU Level 2,Prior Measure,Current Measure,Value
+Start,,,,Upstream,Business Line 1,YoY Prior Quarter,Current Quarter,-2
+Factor Group 1,Factor G L1,Factor A L2,Sub Factor X L3,Upstream,Business Line 1,YoY Prior Quarter,Current Quarter,-6
+Factor Group 1,Factor G L1,Factor B L2,Sub Factor Y L3,Upstream,Business Line 1,YoY Prior Quarter,Current Quarter,10
+Factor Group 1,Factor G L1,Factor B L2,Sub Factor Z L3,Upstream,Business Line 1,YoY Prior Quarter,Current Quarter,1
+Factor Group 2,Factor H L1,Factor C L2,Sub Factor I L3,Upstream,Business Line 1,YoY Prior Quarter,Current Quarter,5
+Factor Group 2,Factor H L1,Factor D L2,Sub Factor J L3,Upstream,Business Line 1,YoY Prior Quarter,Current Quarter,20
+Factor Group 2,Factor H L1,Factor D L2,Sub Factor K L3,Upstream,Business Line 1,YoY Prior Quarter,Current Quarter,4
+End,,,,Upstream,Business Line 1,YoY Prior Quarter,Current Quarter,32
+Start,,,,Upstream,Business Line 2,YoY Prior Quarter,Current Quarter,-33
+Factor Group 1,Factor G L1,Factor A L2,Sub Factor X L3,Upstream,Business Line 2,YoY Prior Quarter,Current Quarter,-5
+Factor Group 1,Factor G L1,Factor B L2,Sub Factor Y L3,Upstream,Business Line 2,YoY Prior Quarter,Current Quarter,-8
+Factor Group 1,Factor G L1,Factor B L2,Sub Factor Z L3,Upstream,Business Line 2,YoY Prior Quarter,Current Quarter,8
+Factor Group 2,Factor H L1,Factor C L2,Sub Factor I L3,Upstream,Business Line 2,YoY Prior Quarter,Current Quarter,3
+Factor Group 2,Factor H L1,Factor D L2,Sub Factor J L3,Upstream,Business Line 2,YoY Prior Quarter,Current Quarter,-1
+Factor Group 2,Factor H L1,Factor D L2,Sub Factor K L3,Upstream,Business Line 2,YoY Prior Quarter,Current Quarter,-9
+End,,,,Upstream,Business Line 2,YoY Prior Quarter,Current Quarter,-45
+Start,,,,Prod. Sol.,Business Line 3,YoY Prior Quarter,Current Quarter,12
+Factor Group 1,Factor G L1,Factor A L2,Sub Factor X L3,Prod. Sol.,Business Line 3,YoY Prior Quarter,Current Quarter,-5
+Factor Group 1,Factor G L1,Factor B L2,Sub Factor Y L3,Prod. Sol.,Business Line 3,YoY Prior Quarter,Current Quarter,-2
+Factor Group 1,Factor G L1,Factor B L2,Sub Factor Z L3,Prod. Sol.,Business Line 3,YoY Prior Quarter,Current Quarter,-10
+Factor Group 2,Factor H L1,Factor C L2,Sub Factor I L3,Prod. Sol.,Business Line 3,YoY Prior Quarter,Current Quarter,5
+Factor Group 2,Factor H L1,Factor D L2,Sub Factor J L3,Prod. Sol.,Business Line 3,YoY Prior Quarter,Current Quarter,-9
+Factor Group 2,Factor H L1,Factor D L2,Sub Factor K L3,Prod. Sol.,Business Line 3,YoY Prior Quarter,Current Quarter,2
+End,,,,Prod. Sol.,Business Line 3,YoY Prior Quarter,Current Quarter,-7
+Start,,,,Prod. Sol.,Business Line 4,YoY Prior Quarter,Current Quarter,26
+Factor Group 1,Factor G L1,Factor A L2,Sub Factor X L3,Prod. Sol.,Business Line 4,YoY Prior Quarter,Current Quarter,-7
+Factor Group 1,Factor G L1,Factor B L2,Sub Factor Y L3,Prod. Sol.,Business Line 4,YoY Prior Quarter,Current Quarter,-7
+Factor Group 1,Factor G L1,Factor B L2,Sub Factor Z L3,Prod. Sol.,Business Line 4,YoY Prior Quarter,Current Quarter,8
+Factor Group 2,Factor H L1,Factor C L2,Sub Factor I L3,Prod. Sol.,Business Line 4,YoY Prior Quarter,Current Quarter,-4
+Factor Group 2,Factor H L1,Factor D L2,Sub Factor J L3,Prod. Sol.,Business Line 4,YoY Prior Quarter,Current Quarter,-1
+Factor Group 2,Factor H L1,Factor D L2,Sub Factor K L3,Prod. Sol.,Business Line 4,YoY Prior Quarter,Current Quarter,-3
+End,,,,Prod. Sol.,Business Line 4,YoY Prior Quarter,Current Quarter,12
